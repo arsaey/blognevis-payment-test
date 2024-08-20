@@ -16,45 +16,45 @@ Follow these steps to set up the project:
 
 1. Clone the repository:
 
-    '''
+    ```
     git clone https://github.com/arsaey/blognevis-payment-test
-    '''
+    ```
 
 2. Navigate into the project directory:
 
-    '''
+    ```
     cd blognevis-payment-test
-    '''
+    ```
 
 3. Install the required dependencies:
 
-    '''
+    ```
     composer install
-    '''
+    ```
 
 4. Copy the example environment file and configure your `.env`:
 
-    '''
+    ```
     cp .env.example .env
-    '''
+    ```
 
 5. Generate the application key:
 
-    '''
+    ```
     php artisan key:generate
-    '''
+    ```
 
 6. Run database migrations:
 
-    '''
+    ```
     php artisan migrate:fresh
-    '''
+    ```
 
 7. Start the Laravel development server:
 
-    '''
+    ```
     php artisan serve
-    '''
+    ```
 
 ## Usage
 
@@ -76,9 +76,9 @@ To test the payment process:
 
 After testing the payment process, you can view the payment logs by visiting:
 
-
-http://localhost:8000/blognevis-payments?dashboard_key=password
-
+   ```
+   http://localhost:8000/blognevis-payments?dashboard_key=password
+   ```
 
 You can customize the dashboard path and access key in the configuration file.
 
